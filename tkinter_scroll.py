@@ -1,5 +1,6 @@
 import matplotlib
 matplotlib.use('agg')
+from matplotlib import pyplot as plt
 import tkinter as tk
 from tkinter import ttk
 from cv2 import cv2

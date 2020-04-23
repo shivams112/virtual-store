@@ -1,5 +1,6 @@
 python-imaging-tk
-pillow
+tk8.6-dev
+python3-tk tk
 libsm6
 libxrender1
 libfontconfig1
