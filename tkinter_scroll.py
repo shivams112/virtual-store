@@ -1,5 +1,5 @@
-import _tkinter as tk
-from _tkinter import ttk
+import tkinter as tk
+from tkinter import ttk
 from cv2 import cv2
 import imutils
 from PIL.Image import Image
