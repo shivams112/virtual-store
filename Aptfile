@@ -1,6 +1,6 @@
 python-imaging-tk
 tk8.6-dev
-python3-tk tk
+python3-tkinter
 libsm6
 libxrender1
 libfontconfig1
