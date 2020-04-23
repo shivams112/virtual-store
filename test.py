@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 from tkinter_scroll import *
 from tkinter import *
 from PIL import Image
