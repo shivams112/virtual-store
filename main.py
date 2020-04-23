@@ -18,7 +18,7 @@ def tryon(file_path):
     file_path = file_path.replace(',','/')
     print(file_path)
     os.system('python test.py ' + file_path)
-    return redirect('http://127.0.0.1:5000/',code=302, Response=None)
+    return render_template('index.html',message='')
 
 @app.route('/tryall',methods = ['POST', 'GET'])
 def tryall():
