@@ -221,11 +221,10 @@ BTNS=[]
 IMAGES ={i:[] for i in range(10)}
 PHOTOS ={i:[] for i in range(10)}
 for img in sys.argv[1:]:
-    print(img)
-    print(img.split('/')[-1][0])
-    IMAGES[int(img.split('/')[-1][0])].append(img)
+    print(img.rsplit('/',1)[0][-1])
+    IMAGES[int(img.rsplit('/',1)[0][-1])].append(img)
     image=ImageTk.PhotoImage(Image.open(img).resize((150,100)))
-    PHOTOS[int(img.split('/')[-1][0])].append(image)
+    PHOTOS[int(img.rsplit('/',1)[0][-1])].append(image)
 for index in range(9):
     if len(PHOTOS[index]) > 0:
         for k,photo in enumerate(PHOTOS[index]):
