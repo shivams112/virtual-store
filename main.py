@@ -17,8 +17,8 @@ def checkout():
 def tryon(file_path):
     file_path = file_path.replace(',','/')
     print(file_path)
-    os.system('python test.py ' + file_path)
-    return redirect('https://virtual-dressing-store.herokuapp.com/',code=302, Response=None)
+    os.system('python3 test.py ' + file_path)
+    return redirect('http://127.0.0.1:5000/',code=302, Response=None)
 
 @app.route('/tryall',methods = ['POST', 'GET'])
 def tryall():
